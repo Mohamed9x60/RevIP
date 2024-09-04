@@ -13,6 +13,10 @@ RevIP is a Python-based tool that allows users to perform reverse IP lookups. By
 - **User-Friendly Interface**: A colorful command-line interface for easy navigation.
 - **Error Handling**: Manages errors such as invalid domains or API limits with clear messages.
 
+## **Note**
+
+- Note Only one option can be included instead of multiple options
+
 ## Requirements
 
 The tool requires the following Python libraries:
