@@ -1,4 +1,3 @@
-## markdown
 # Reverse IP Lookup Tool (RevIP)
 
 **Programmed by: Mohamed Fouad**
@@ -34,7 +33,7 @@ pip install -r requirements.txt
 ### 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/revip.git
+git clone https://github.com/Mohamed9x60/RevIP.git
 ```
 
 ### 2. Navigate to the project directory:
