@@ -58,6 +58,30 @@ pip install -r requirements.txt
 python3 RevIP.py
 ```
 
+
+### Update: Run the Tool Using command `RevIP`
+
+To make the tool executable using the Command `RevIP` , follow these steps:
+
+ Grant execution permission to the file:
+
+   ```
+   chmod +x RevIP.py
+   ```
+
+ Move the file to `/usr/local/bin`:
+
+   ```
+   sudo mv RevIP.py /usr/local/bin/RevIP
+   ```
+
+ Now, the tool is ready to be executed with:
+
+   ```
+   RevIP
+   ```
+
+
 ### 5. Enter the domain names you want to check (comma-separated) and follow the on-screen instructions to save the results in your preferred format.
 
 ## Example Usage
