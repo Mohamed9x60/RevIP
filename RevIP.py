@@ -54,8 +54,9 @@ def reverse_ip_lookup(ip):
 def save_to_txt(sites, domain):
     filename = f"sites_list_{domain.replace('.', '_')}.txt"
     with open(filename, 'w') as file:
-        file.write(f"{Figlet(font='big').renderText('Mohamed Fouad')}\n")
-        file.write("Welcome to the Reverse IP Lookup (RevIP) Tool!\n")
+        file.write(f"{Figlet(font='big').renderText('RevIP')}\n")
+        file.write("Programmer: Mohamed Fouad\n")
+        file.write("Welcome to the Reverse IP Lookup "RevIP" Tool!\n")
         file.write(f"Processing domain: {domain}\n")
         file.write(f"IP address for the domain: {get_ip_from_domain(domain)}\n")
         file.write("Websites hosted on the same server:\n")
@@ -68,8 +69,9 @@ def save_to_csv(sites, domain):
     filename = f"sites_list_{domain.replace('.', '_')}.csv"
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow([Figlet(font='big').renderText('Mohamed Fouad')])
+        writer.writerow([Figlet(font='big').renderText('RevIP')])
         writer.writerow(["Welcome to the Reverse IP Lookup (RevIP) Tool!"])
+        writer.writerow("Programmer: Mohamed Fouad\n")
         writer.writerow([f"Processing domain: {domain}"])
         writer.writerow([f"IP address for the domain: {get_ip_from_domain(domain)}"])
         writer.writerow(["Websites hosted on the same server:"])
@@ -98,7 +100,8 @@ def save_to_html(sites, domain):
     filename = f"sites_list_{domain.replace('.', '_')}.html"
     with open(filename, 'w') as file:
         file.write(f"<!DOCTYPE html>\n<html>\n<head>\n<title>Reverse IP Lookup(RevIP)!</title>\n<style>body {{ font-family: Arial, sans-serif; }}</style>\n</head>\n<body>\n")
-        file.write(f"<h1 style='font-family: monospace;'>{Figlet(font='big').renderText('Mohamed Fouad')}</h1>\n")
+        file.write(f"<h1 style='font-family: monospace;'>{Figlet(font='big').renderText('RevIP')}</h1>\n")
+        file.write(f"<h2>Program: Mohamed Fouad!</h2>\n")
         file.write(f"<h2>Welcome to the Reverse IP Lookup Tool!</h2>\n")
         file.write(f"<p>Processing domain: {domain}</p>\n")
         file.write(f"<p>IP address for the domain: {get_ip_from_domain(domain)}</p>\n")
@@ -111,9 +114,9 @@ def save_to_html(sites, domain):
 # Function to generate a colorful welcome message
 def welcome_message():
     f = Figlet(font='slant')
-    welcome_text = f.renderText("      RevIP   ")
+    welcome_text = f.renderText("           RevIP         ")
     print(Fore.CYAN + welcome_text + Fore.RESET)
-    print(Fore.RED + "    Free Palestine   " + Fore.RESET)
+    print(Fore.RED + "      Free Palestine   " + Fore.RESET)
     print(Fore.CYAN + "Programmer by: Mohamed Fouad" + Fore.RESET)
     print(Fore.BLUE + "Welcome to the Reverse IP Lookup Tool!(RevIP)" + Fore.RESET)
     print(Fore.LIGHTGREEN_EX + "Enter the domains you want to search, and we will retrieve the websites hosted on the same server." + Fore.RESET)
@@ -143,7 +146,7 @@ def handle_file_saving(sites, domain):
         return
 
     if len(selections) > 3:
-        print(Fore.RED + "You can only select up to 3 formats. Please try again." + Fore.RESET)
+        print(Fore.RED + "You can only select up to 3 formats. Please try again!." + Fore.RESET)
         return
 
     for selection in selections:
